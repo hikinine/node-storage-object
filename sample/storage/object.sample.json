@@ -1,0 +1,27 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Paul"
+    },
+    {
+      "id": 2,
+      "name": "Duck"
+    },
+    {
+      "id": 3,
+      "name": "Jhon"
+    }
+  ],
+  "products": [
+    {
+      "name": "Keyboard",
+      "price": 33.5
+    },
+    {
+      "name": "Mousepad",
+      "price": 19.5
+    }
+  ],
+  "key": "anything..."
+}
