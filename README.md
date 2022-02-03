@@ -24,14 +24,12 @@ Proxy API intercept any interaction with the object, then internal sync/persist 
 ```javascript
 const Storage = require("node-storage-object")
 
-const user = [
-    {
-        name: "Jhon",
-        lastName: "Mars",
-        isDeveloper: false,
-        age: 18,
-    }
-]
+const user = [{
+  name: "Jhon",
+  lastName: "Mars",
+  isDeveloper: false,
+  age: 18,
+}]
 
 const { store } = new Storage({ 
   filename: "storage/v1.json",
@@ -69,12 +67,12 @@ console.log(store)
 ```javascript
 const { store } = new Storage({
     // Required, path where you want to persist your data.
-    filename: string
+    filename: string,
 
     // Optional, default = {}.
     // If your file already exist, and any data already exist,
     // initialValue will be ignored.
-    initialValue?: object or array
+    initialValue?: object or array,
 
     // Optional, default = false
     // Parse your data in the file (visual purpose only)
