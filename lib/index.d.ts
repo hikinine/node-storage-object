@@ -6,4 +6,4 @@ interface StorageProps {
   beautyJsonParse?:boolean
 }
 
-function Storage<T>({filename, initialValue, beautyJsonParse}: StorageProps<T>): T extends Array ? T[] : T
+export default function Storage<T>({filename, initialValue, beautyJsonParse}: StorageProps<T>): T extends Array ? T[] : T
