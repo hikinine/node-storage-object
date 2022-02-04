@@ -1,6 +1,6 @@
 const Storage = require("../lib")
 
-const { store } = new Storage({ 
+const store = new Storage({ 
   filename: "sample/storage/object.sample.json",
   beautyJsonParse: true
 })
