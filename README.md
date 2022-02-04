@@ -31,7 +31,7 @@ const user = [{
   age: 18,
 }]
 
-const { store } = new Storage({ 
+const store = new Storage({ 
   filename: "storage/v1.json",
   initialValue: user
 })
@@ -49,7 +49,7 @@ console.log(store)
 ```javascript
 const Storage = require("node-storage-object")
 
-const { store } = new Storage({ 
+const store = new Storage({ 
   filename: "storage/v1.json"
 })
 
@@ -65,7 +65,7 @@ console.log(store)
 
 ### Docs
 ```javascript
-const { store } = new Storage({
+const store = new Storage({
     // Required, path where you want to persist your data.
     filename: string,
 

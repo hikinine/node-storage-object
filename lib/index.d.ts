@@ -1,9 +1,6 @@
 
-
-interface StorageProps {
+export default function Storage<T>({filename, initialValue, beautyJsonParse}: {
   filename: string,
   initialValue?: T,
-  beautyJsonParse?:boolean
-}
-
-export default function Storage<T>({filename, initialValue, beautyJsonParse}: StorageProps<T>): T extends Array ? T[] : T
+  beautyJsonParse?: boolean
+}):  unknown extends T ? any : T
